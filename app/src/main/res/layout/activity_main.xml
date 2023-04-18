@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineAmbientShadowColor="#E8BC39"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="539dp"
+        android:layout_height="1221dp"
+        app:srcCompat="@drawable/istockphoto_924559330_170667a"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-194dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="199dp"
+        android:layout_height="314dp"
+        android:layout_marginBottom="436dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/e6f7f9018a422e72d07cb812b5d628ad__wordpress" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="177dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/yellow"
+        android:outlineAmbientShadowColor="#E8BC39"
+        android:text="LOGIN"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:iconTint="#040404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#050505" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:background="#FDFCFC"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="E-mail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:background="#FAF8F8"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:text="Senha"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        android:elegantTextHeight="false"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName"
+        android:text="KD o Buraco?"
+        android:textAlignment="center"
+        android:textColor="#E8BC39"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lembrar"
+        android:textColor="#E8BC39"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
